@@ -1,0 +1,85 @@
+
+/* User Card */
+.user-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 100%; /* Tăng chiều rộng */
+    padding: 30px; /* Tăng padding */
+}
+
+
+/* Avatar */
+.avatar img {
+    width: 150px; /* Tăng kích thước ảnh đại diện */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Tăng khoảng cách bên dưới */
+    border: 5px solid #007bff; /* Tăng độ dày viền */
+    background-color: #fff;
+}
+
+/* User Info */
+.info {
+    color: #333;
+}
+
+.name {
+    font-size: 2em; /* Tăng kích thước font chữ cho tên */
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.email,
+.password {
+    font-size: 1.2em; /* Tăng kích thước font chữ */
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Icons */
+.email::before {
+    content: "✉ ";
+    color: #007bff;
+}
+
+.password::before {
+    content: "🔒 ";
+    color: #ff6f61;
+}
+
+/* Button Styles */
+.update-btn {
+    display: inline-block; /* Inline block để dễ canh chỉnh */
+    width: auto; /* Tự động theo nội dung */
+    padding: 15px 30px; /* Tăng khoảng cách bên trong */
+    background-color: #007bff; /* Màu nền xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    font-size: 1.2em; /* Tăng kích thước chữ */
+    font-weight: bold; /* Chữ in đậm */
+    border: none; /* Loại bỏ viền */
+    border-radius: 10px; /* Bo tròn các góc */
+    cursor: pointer; /* Hiệu ứng con trỏ chuột */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt */
+    text-transform: uppercase; /* Chữ in hoa */
+    letter-spacing: 1px; /* Giãn cách chữ */
+}
+
+/* Hover Effect */
+.update-btn:hover {
+    background-color: #0056b3; /* Màu nền đậm hơn khi hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Tăng đổ bóng khi hover */
+    transform: translateY(-2px); /* Nút nâng lên khi hover */
+}
+
+/* Focus Effect */
+.update-btn:focus {
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+    background-color: #003d80; /* Đổi màu nền khi focus */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Hiệu ứng ánh sáng */
+}

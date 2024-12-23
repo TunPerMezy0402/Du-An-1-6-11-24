@@ -1,0 +1,256 @@
+:root {
+    --font_EduTASBeginner: 'Edu TAS Beginner', cursive;
+    --font_NunitoSans: 'Nunito Sans', sans-serif;
+    --color10: #dba628;
+    --color30: rgb(78, 78, 78);
+}
+
+
+
+.newfocus>img {
+    width: 100%;
+}
+
+.listnews>.group-news {
+    display: block;
+    display: flex;
+    height: 120px;
+    text-decoration: none;
+    font-family: var(--font_NunitoSans);
+}
+
+.listnews-wrap .listnews-title {
+    font-family: var(--font_NunitoSans);
+    font-size: 28px;
+    color: var(--color30);
+    position: relative;
+}
+
+.listnews-wrap .listnews-title::after {
+    content: "";
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    top: 20px;
+    left: 150px;
+}
+
+.group-news {
+    margin-bottom: 10px;
+}
+
+.group-news:hover .group-news__title {
+    text-decoration: overline;
+    transform: 0.4s;
+}
+
+.group-news-content {
+    padding-left: 12px;
+}
+
+.listnews>.group-news img {
+    width: 200px;
+    height: 100%;
+}
+
+.group-news__title {
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    color: var(--color30);
+    font-size: 18px;
+}
+
+.group-news__time {
+    font-weight: 500;
+    color: var(--color10);
+    margin-top: 20px;
+}
+
+.group-news__time i {
+    padding-right: 8px;
+}
+
+.newfocus-content {
+    display: flex;
+    padding-top: 20px;
+}
+
+.newfocus-content-time {
+    font-family: var(--font_NunitoSans);
+    color: var(--color30);
+    font-size: 16px;
+}
+
+.newfocus-content-time i {
+    padding-right: 4px;
+}
+
+.newfocus-content-title {
+    height: 60px;
+    line-height: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    color: var(--color30);
+    font-size: 26px;
+    font-family: var(--font_NunitoSans);
+    font-weight: 500;
+}
+
+.pagenews>.row {
+    overflow: hidden;
+    height: 558px;
+}
+
+.wrap_newsale {
+    font-size: var(--font_NunitoSans);
+    color: var(--color30);
+}
+
+.wrap_newsale .newsale-time {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.wrap_newsale img {
+    width: 100%;
+}
+
+.pagenews>div {
+    margin: 30px 0;
+}
+
+.product_incart-information-quantity {
+    display: flex;
+}
+.product_incart-information-quantity p{
+    font-size: 14px;
+}
+.product_incart {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    font-family: var(--font_NunitoSans);
+    color: var(--color30);
+    height: 140px;
+    padding: 20px;
+    align-items: center;
+}
+
+.product_incart::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 35px;
+    width: 300px;
+    height: 3px;
+    background-color: rgb(194, 194, 194);
+}
+
+.actcart {
+    padding: 0 16px;
+}
+.Information_bill{
+    width: 100%;
+}
+.actcart button:hover {
+    background-color: black;
+    color: white;
+}
+
+.wrap_order {
+    padding-top: 20px;
+}
+
+.actcart button:hover>* {
+    background-color: black;
+    color: white;
+}
+
+.actcart button>* {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color30);
+}
+
+.actcart button {
+    width: 100%;
+    border: none;
+    padding: 20px 0;
+    margin: 12px 0;
+    border-radius: 40px;
+}
+
+.product_incart-information-name {
+    width: 180px;
+    height: 44px;
+    line-height: 22px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin-bottom: 6px;
+}
+
+.product_incart-information {
+    padding-left: 12px;
+}
+
+.product_incart img {
+    height: 100px;
+    width: 100px;
+}
+
+.carthidden {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(136, 136, 136, 0.3);
+}
+.carthidden .cart_content {
+    width: 360px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.wrap_newsale-title {
+    height: 40px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.newsale .newSale-title {
+    font-size: 32px;
+    text-align: center;
+    font-family: var(--font_NunitoSans);
+    padding: 30px 0;
+    position: relative;
+}
+
+.newsale .newSale-title::after {
+    content: "";
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    background-color: rgb(207, 207, 207);
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

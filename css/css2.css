@@ -1,0 +1,138 @@
+/* Tổng thể bảng giỏ hàng */
+.cart-css2 {
+    color: #343a40; /* Màu chữ tối */
+    padding: 15px; /* Khoảng cách bên trong */
+    font-size: 30px; /* Kích thước chữ */
+    font-weight: 600; /* Chữ đậm */
+    font-style: italic;
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    background: linear-gradient(to bottom, #f9f9f9, #fff);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+table tr:hover {
+    background-color: #fce4ec;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+/* Tổng tiền */
+table tr:last-child {
+    background-color: #ffefef;
+    font-weight: bold;
+}
+
+table tr:last-child td {
+    color: #d32f2f;
+    font-size: 16px;
+}
+
+/* Nút tăng giảm số lượng */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e53935;
+}
+
+form input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Nút xóa */
+table td a input[type="button"] {
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+table td a input[type="button"]:hover {
+    background-color: #b71c1c;
+}
+
+/* Tiêu đề và hộp quay lại */
+.jhedgfes {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.jhedgfes a button {
+    background-color: #ff8a65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jhedgfes a button:hover {
+    background-color: #e64a19;
+}
+
+/* Chú thích khi giỏ hàng trống */
+table td[colspan="6"] {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 20px;
+}

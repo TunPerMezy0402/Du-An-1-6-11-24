@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+    padding-left: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%; /* Bảng sẽ chiếm toàn bộ chiều rộng của khung chứa */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Kiểu cho các ô tiêu đề */
+th {
+    background-color: #444; /* Màu nền cho tiêu đề */
+    color: white; /* Màu chữ trắng */
+    font-weight: bold;
+    padding: 10px; /* Khoảng đệm cho ô tiêu đề */
+    text-align: left; /* Căn lề trái */
+    border: 1px solid #ddd; /* Viền ô */
+}
+
+/* Kiểu cho các ô dữ liệu */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+/* Hiệu ứng khi di chuột qua hàng */
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
+}
+.card-header
+{
+    text-align: center;
+    padding: 50px;
+}
+
+/* form */
+form {
+    width: 1000%;
+    max-width: 1000px; /* Giới hạn chiều rộng của form */
+    margin: 50px auto; /* Canh giữa form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.row {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+.card-header
+{
+    background-color: #ddd;
+    margin: 1px;
+    
+}
+
+/* Container logo và chữ */
+.logo-text {
+    display: flex;
+    align-items: center; /* Căn giữa logo và chữ theo chiều dọc */
+}
+
+/* Logo */
+.logo {
+    width: 40px; /* Kích thước logo */
+    height: auto; /* Tự động thay đổi chiều cao theo tỉ lệ */
+    margin-right: 10px; /* Khoảng cách giữa logo và chữ */
+}
+
+/* Chữ */
+.text {
+    font-size: 1.2rem; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    color: #333; /* Màu chữ */
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    margin: 10px 0; /* Khoảng cách giữa các mục menu */
+}
+menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center; /* Căn giữa icon và text theo chiều dọc */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ảnh (icon) trong menu */
+.menu a img {
+    width: 24px; /* Kích thước của icon */
+    height: 24px;
+    margin-right: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+/* Hiệu ứng hover cho menu */
+.menu a:hover {
+    background-color: #555;
+}
+.menu-container {
+    width: 250px;
+    padding: 20px;
+}
+/* CSS cho thẻ h2 chứa logo */
+.logo-heading {
+    display: flex;
+    align-items: center; /* Căn giữa logo và chữ theo chiều dọc */
+    font-size: 1.5rem; /* Kích thước chữ */
+    font-weight: bold;
+    margin: 20px 0; /* Khoảng cách trên dưới của h2 */
+}
+
+/* Link */
+.logo-link {
+    text-decoration: none;
+    color: #333; /* Màu chữ */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+/* Ảnh logo */
+.logo-link img {
+    border-radius: 50%; /* Làm tròn ảnh logo */
+    border: 2px solid #333; /* Đường viền cho logo */
+}
+
+/* Định dạng tổng thể cho form */
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.frmtitle h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Định dạng label */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Định dạng các ô nhập liệu */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Định dạng riêng cho nút submit nếu có */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Định dạng thông báo */
+.thongbao {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

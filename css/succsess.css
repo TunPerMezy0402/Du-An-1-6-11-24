@@ -1,0 +1,68 @@
+/* General reset */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.success-container {
+    text-align: center;
+}
+
+.success-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #fff;
+    color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a.btn:hover {
+    background: #6a11cb;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+a.btn:active {
+    transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
